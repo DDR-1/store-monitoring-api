@@ -1,2 +1,4 @@
 .venv
 .env
+data/
+app/__pychache__
