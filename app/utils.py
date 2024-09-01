@@ -11,7 +11,6 @@ def generate_report(app, current_time, report_id):
         try:
             store_ids = db.session.query(distinct(MenuHours.store_id)).all()
             store_ids = [store_id[0] for store_id in store_ids]
-            store_ids = store_ids[0:5]
             
             temp_dir = tempfile.gettempdir()
             file_path = os.path.join(temp_dir, f"{report_id}.csv")
