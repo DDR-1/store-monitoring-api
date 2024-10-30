@@ -24,7 +24,7 @@ with app.app_context():
 def home():
     return 'App is loaded'
 
-@app.route('/trigger_report')
+@app.route('/trigger_report', methods=['GET'])
 def trigger_report():
     try:
         # current_time = datetime.now()
